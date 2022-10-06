@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "argonite";
+    src: url("./assets/stone\ orgonite.woff");
+  }
+
+@font-face {
+font-family: "Poppins";
+src: url("./assets/Poppins-Regular.ttf");
+}
+
+:root{
+    --main-color: #f8b281;
+    --secondary-color: #1b1b1b;
+}
+
+html{
+    font-family: "Poppins";
+}
+
+section{
+    padding:5%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-family: "Argonite";
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.logo img{
+    width: 1.5rem;
+}
+
+nav div{
+    display: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 125%;
+    padding: 1rem 0;
+}
+h3{
+    font-size: 1.25rem;
+    line-height: 125%;
+ }
+
+ .selling-points{
+    text-align: center;
+    margin-top: 25vh;
+ }
+ .selling-points h2{
+    font-family: "Argonite";
+ }
+
+ .ctas{
+    margin-top: 2rem;
+ }
+
+ .ctas button{
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin: 1rem
+ }
+
+ .cta-main{
+    background-color: var(--main-color);
+    color: var(--secondary-color)
+ }
+
+ .cta-sec{
+    background-color: var(--secondary-color);
+    color: white;
+ }
