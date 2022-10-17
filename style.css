@@ -15,8 +15,9 @@ src: url("./assets/Poppins-Regular.ttf");
 }
 
 :root{
-    --main-color: #f8b281;
-    --secondary-color: #1b1b1b;
+    --primary-color: #0d6efd;
+    --secondary-color: #dc3545;
+    --dark-color: #1b1b1b;
     --ligth-color: #FFFFFF
 }
 
@@ -30,12 +31,6 @@ body{
 
 section{
     padding:5%;
-}
-
-@media screen and (min-width: 768px){
-    section{
-        padding:5% 15%;
-    }
 }
 
 .logo{
@@ -83,8 +78,42 @@ h3{
  }
 
  .pets {
-    color: var(--secondary-color);    
+    color: var(--dark-color);    
  }
+
+ .adote{    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+ }
+
+ .adote-item-container{    
+    position: relative;
+ }
+
+ .adote-item-container h3{
+    color: var(--dark-color);    
+    font-family: "Argonite";
+    font-size: 2rem;    
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .adote-item{
+    overflow: hidden;
+    border-radius: 0.5rem;
+ }
+
+ .adote-item img{    
+    width: 100%;    
+    height: 100%;
+    display: block;
+    object-fit: cover;
+ }
+
  hgroup{
     text-align: center;
  }
@@ -103,13 +132,13 @@ h3{
  }
 
  .cta-main{
-    background-color: var(--main-color);
-    color: var(--secondary-color)
+    background-color: var(--primary-color);
+    color: var(--ligth-color)
  }
 
- .cta-sec{
-    background-color: var(--secondary-color);
-    color: white;
+ .cta-sec{    
+    background-color:  var(--secondary-color);
+    color: var(--ligth-color);
  } 
  
  .hero{
@@ -135,4 +164,12 @@ h3{
  }
 
  
- 
+ @media screen and (min-width: 768px){
+   section{
+       padding:5% 15%;
+   }
+
+   .adote{
+      flex-direction: row;      
+   }
+}
