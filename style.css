@@ -22,12 +22,15 @@
 }
 
 html {
-  font-family: "Poppins";
-  overflow-x: hidden;
+  font-family: "Poppins";  
 }
 
 body {
-  color: var(--ligth-color);
+  color: var(--ligth-color);  
+}
+
+html, body{
+  overflow-x: hidden;
 }
 
 section {
